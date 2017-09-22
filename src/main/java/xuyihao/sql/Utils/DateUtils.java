@@ -1,4 +1,4 @@
-package Utils;
+package xuyihao.sql.Utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
