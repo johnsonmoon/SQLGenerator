@@ -27,12 +27,12 @@ public class Update {
 		String result = sql;
 		if (!set.isEmpty()) {
 			String setStr = "SET ";
-			for (String key : set.keySet()) {
-				Object value = set.get(key);
+			for (Map.Entry<String, Object> entry : set.entrySet()) {
+				Object value = entry.getValue();
 				if (value instanceof String) {
-					setStr += (key + " = '" + value + "', ");
+					setStr += (entry.getKey() + " = '" + value + "', ");
 				} else {
-					setStr += (key + " = " + value + ", ");
+					setStr += (entry.getKey() + " = " + value + ", ");
 				}
 			}
 			setStr = setStr.substring(0, setStr.length() - 2);

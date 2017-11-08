@@ -51,8 +51,8 @@ public class SQLUtils {
 	 */
 	public static String deleteSentence(String tableName, Map<String, Object> where) {
 		String sql = "delete from " + tableName + " where ";
-		for (String key : where.keySet()) {
-			sql += (key + " = " + convertToString(where.get(key)) + " and ");
+		for (Map.Entry<String, Object> entry : where.entrySet()) {
+			sql += (entry.getKey() + " = " + convertToString(entry.getValue()) + " and ");
 		}
 		sql = sql.substring(0, sql.length() - 5);
 		return sql;
@@ -67,8 +67,8 @@ public class SQLUtils {
 	 */
 	public static String updateSentence(String tableName, Map<String, Object> update) {
 		String sql = "update " + tableName + " set ";
-		for (String updateKey : update.keySet()) {
-			sql += (updateKey + " = " + convertToString(update.get(updateKey)) + ", ");
+		for (Map.Entry<String, Object> updateEntry : update.entrySet()) {
+			sql += (updateEntry.getKey() + " = " + convertToString(updateEntry.getValue()) + ", ");
 		}
 		sql = sql.substring(0, sql.length() - 2);
 		return sql;
@@ -84,13 +84,13 @@ public class SQLUtils {
 	 */
 	public static String updateSentence(String tableName, Map<String, Object> update, Map<String, Object> where) {
 		String sql = "update " + tableName + " set ";
-		for (String updateKey : update.keySet()) {
-			sql += (updateKey + " = " + convertToString(update.get(updateKey)) + ", ");
+		for (Map.Entry<String, Object> updateEntry : update.entrySet()) {
+			sql += (updateEntry.getKey() + " = " + convertToString(updateEntry.getValue()) + ", ");
 		}
 		sql = sql.substring(0, sql.length() - 2);
 		sql += " where ";
-		for (String whereKey : where.keySet()) {
-			sql += (whereKey + " = " + convertToString(where.get(whereKey)) + " and ");
+		for (Map.Entry<String, Object> whereEntry : where.entrySet()) {
+			sql += (whereEntry.getKey() + " = " + convertToString(whereEntry.getValue()) + " and ");
 		}
 		sql = sql.substring(0, sql.length() - 5);
 		return sql;
@@ -111,8 +111,8 @@ public class SQLUtils {
 		}
 		sql = sql.substring(0, sql.length() - 2);
 		sql += (" from " + tableName + " where ");
-		for (String whereKey : where.keySet()) {
-			sql += (whereKey + " = " + convertToString(where.get(whereKey)) + " and ");
+		for (Map.Entry<String, Object> whereEntry : where.entrySet()) {
+			sql += (whereEntry.getKey() + " = " + convertToString(whereEntry.getValue()) + " and ");
 		}
 		sql = sql.substring(0, sql.length() - 5);
 		return sql;
@@ -128,8 +128,8 @@ public class SQLUtils {
 	public static String selectSentence(String tableName, Map<String, Object> where) {
 		String sql = "select *";
 		sql += (" from " + tableName + " where ");
-		for (String whereKey : where.keySet()) {
-			sql += (whereKey + " = " + convertToString(where.get(whereKey)) + " and ");
+		for (Map.Entry<String, Object> whereEntry : where.entrySet()) {
+			sql += (whereEntry.getKey() + " = " + convertToString(whereEntry.getValue()) + " and ");
 		}
 		sql = sql.substring(0, sql.length() - 5);
 		return sql;
