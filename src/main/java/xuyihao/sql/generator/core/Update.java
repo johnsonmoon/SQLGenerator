@@ -77,4 +77,9 @@ public class Update {
 		this.criteria = criteria;
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Update [sql=" + sql + ", set=" + set + ", criteria=" + criteria + "]";
+	}
 }

@@ -45,4 +45,9 @@ public class Delete {
 		this.criteria = criteria;
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Delete [sql=" + sql + ", criteria=" + criteria + "]";
+	}
 }

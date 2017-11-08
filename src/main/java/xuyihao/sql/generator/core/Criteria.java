@@ -368,4 +368,9 @@ public class Criteria {
 		}
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Criteria [where=" + where + "]";
+	}
 }

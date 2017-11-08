@@ -72,4 +72,9 @@ public class Insert {
 		this.sql += ("VALUES (" + valueStr + ") ");
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Insert [sql=" + sql + "]";
+	}
 }

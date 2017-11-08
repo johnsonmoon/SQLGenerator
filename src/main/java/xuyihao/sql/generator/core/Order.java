@@ -62,4 +62,9 @@ public class Order {
 		this.orderby += (DIRECTION_DESC + " ");
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Order [orderby=" + orderby + "]";
+	}
 }

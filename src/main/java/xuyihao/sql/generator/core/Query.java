@@ -268,4 +268,9 @@ public class Query {
 		this.groupByField = field;
 		return this;
 	}
+
+	@Override
+	public String toString() {
+		return "Query [sql=" + sql + ", criteria=" + criteria + ", order=" + order + ", groupByField=" + groupByField + "]";
+	}
 }
