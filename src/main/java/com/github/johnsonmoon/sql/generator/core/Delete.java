@@ -1,4 +1,4 @@
-package xuyihao.sql.generator.core;
+package com.github.johnsonmoon.sql.generator.core;
 
 /**
  * Created by xuyh at 2017/9/22 18:28.

@@ -2,17 +2,17 @@
 生成SQL语句的工具
 
 ## 基本类
-- xuyihao.sql.generator.core.Order
+- Order
 	排序条件生成类
-- xuyihao.sql.generator.core.Criteria
+- Criteria
 	查询条件生成类
-- xuyihao.sql.generator.core.Query
+- Query
 	查询sql语句生成类
-- xuyihao.sql.generator.core.Delete
+- Delete
 	删除sql语句生成类
-- xuyihao.sql.generator.core.Insert
+- Insert
 	插入sql语句生成类
-- xuyihao.sql.generator.core.Update
+- Update
 	更新sql语句生成类
 	
 ## 用法

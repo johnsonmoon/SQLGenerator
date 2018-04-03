@@ -1,8 +1,8 @@
-package xuyihao.sql.Utils.generator.core;
+package com.github.johnsonmoon.sql.Utils.generator.core;
 
 import org.junit.Test;
-import xuyihao.sql.generator.core.Criteria;
-import xuyihao.sql.generator.core.Delete;
+import com.github.johnsonmoon.sql.generator.core.Criteria;
+import com.github.johnsonmoon.sql.generator.core.Delete;
 
 /**
  * Created by xuyh at 2017/9/22 18:33.

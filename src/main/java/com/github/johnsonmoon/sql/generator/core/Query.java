@@ -1,4 +1,4 @@
-package xuyihao.sql.generator.core;
+package com.github.johnsonmoon.sql.generator.core;
 
 /**
  * 查询

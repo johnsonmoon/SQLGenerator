@@ -1,7 +1,7 @@
-package xuyihao.sql.Utils.generator.core;
+package com.github.johnsonmoon.sql.Utils.generator.core;
 
 import org.junit.Test;
-import xuyihao.sql.generator.core.Order;
+import com.github.johnsonmoon.sql.generator.core.Order;
 
 /**
  * Created by xuyh at 2017/9/22 15:34.

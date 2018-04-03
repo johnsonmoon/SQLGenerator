@@ -1,4 +1,4 @@
-package xuyihao.sql.generator.core;
+package com.github.johnsonmoon.sql.generator.core;
 
 import java.util.ArrayList;
 import java.util.Collection;
